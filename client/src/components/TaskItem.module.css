@@ -1,0 +1,86 @@
+.taskItem {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0; /* No longer needed, grid gap handles spacing */
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Stack info and actions vertically */
+  gap: 1rem; /* Space between info and actions */
+  min-height: 120px; /* Give card a minimum height */
+  transition: box-shadow 0.2s ease;
+}
+
+.taskItem:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.taskInfo {
+  display: flex;
+  flex-direction: column; /* Stack name and status */
+  gap: 0.75rem;
+  flex-grow: 1; /* This is key: pushes actions to the bottom */
+}
+
+.taskName {
+  font-size: 1.2rem; /* Make name bigger */
+  font-weight: 500;
+  color: #172b4d;
+  word-break: break-word; /* Allow long names to wrap */
+}
+.taskName.complete {
+  text-decoration: line-through;
+  color: #5e6c84;
+}
+
+.taskStatus {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  text-transform: uppercase;
+   align-self: flex-start; 
+}
+
+.statusIncomplete {
+  background-color: #deebff;
+  color: #0052cc;
+}
+
+.statusComplete {
+  background-color: #e3fcef;
+  color: #006644;
+}
+
+.taskActions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end; /* Align buttons to the right */
+  flex-shrink: 0; /* Prevent buttons from shrinking */
+  border-top: 1px solid #dfe1e6; /* Add a separator line */
+  padding-top: 1rem;
+}
+.actionButton {
+  background-color: #f4f5f7;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #42526e;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.actionButton:hover {
+  background-color: #dfe1e6;
+}
+
+.deleteButton {
+  background-color: #fffafe;
+  color: #de350b;
+}
+
+.deleteButton:hover {
+  background-color: #ffebe6;
+}

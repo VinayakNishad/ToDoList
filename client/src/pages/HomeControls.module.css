@@ -1,0 +1,71 @@
+.controlsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allow controls to wrap on small screens */
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput {
+  flex-grow: 1; /* Make search bar take up available space */
+  min-width: 200px; /* Ensure it's not too small */
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #dfe1e6;
+  border-radius: 4px;
+  background-color: #fafbfc;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #0065ff;
+  background-color: #fff;
+}
+
+.selectWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.selectWrapper label {
+  font-weight: 600;
+  color: #42526e;
+}
+
+.selectWrapper select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #dfe1e6;
+  border-radius: 4px;
+  background-color: #fafbfc;
+}
+
+.selectWrapper select:focus {
+  outline: none;
+  border-color: #0065ff;
+}
+
+/* Responsive styles for controls */
+@media (max-width: 768px) {
+  .controlsContainer {
+    flex-direction: column;
+    align-items: stretch; /* Make all controls full-width */
+  }
+
+  .searchInput {
+    min-width: 0;
+  }
+
+  .selectWrapper {
+    justify-content: space-between; /* Spread label and select */
+  }
+
+  .selectWrapper select {
+    flex-grow: 1;
+    min-width: 150px;
+  }
+}

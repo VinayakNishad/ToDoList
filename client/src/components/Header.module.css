@@ -1,0 +1,68 @@
+.header {
+  background-color: #0065ff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: large;
+  transition: background-color 0.2s ease;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navButton {
+  background: none;
+  border: none;
+  color: #0065ff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 1.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  font-size: 1rem; 
+  font-family: inherit; 
+  font-weight: 600;
+}
+
+
+.navButton:hover {
+  background-color: #e1eaff;
+}
+@media (max-width: 600px) {
+  .navContainer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navLink,
+  .navButton {
+    margin-left: 0;
+  }
+}
