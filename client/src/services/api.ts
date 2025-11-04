@@ -3,7 +3,7 @@ import type { ITask } from '../types';
 import type { ILoginData, IRegisterData, IUserAuthResponse } from '../types';
 
 // Define the base URL for your API
-const API_URL = 'http://localhost:5001/api';
+const API_URL = 'https://todolist-g5vz.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
