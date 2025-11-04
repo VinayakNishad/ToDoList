@@ -7,6 +7,7 @@
   background: #fff;
   padding: 2rem;
   border-radius: 8px;
+ 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -45,6 +46,9 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+   background-image: url("../assets/background-image.avif");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .error {

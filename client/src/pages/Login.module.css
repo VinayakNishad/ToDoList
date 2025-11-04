@@ -4,7 +4,7 @@
 }
 
 .form {
-  background: #fff;
+  background: #ffffff;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -37,7 +37,9 @@
 
 .submitButton {
   width: 100%;
-  background-color: #0065ff;
+  background-image: url("../assets/background-image.avif");
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;

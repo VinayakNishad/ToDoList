@@ -15,9 +15,11 @@ const Header = () => {
     <header className={styles.header}>
       <div className={`${styles.navContainer} container`}>
         <Link to="/" className={styles.logo}>
+        <img src="/todolist.svg" alt="logo" width="40" height="40" style={{ marginRight: '10px'}} />
           Trello-ToDo
         </Link>
         <nav>
+          
             
             {token ? (
                 <> 
